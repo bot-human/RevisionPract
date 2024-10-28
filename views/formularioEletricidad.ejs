@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Electricidad básica</title>
+</head>
+<body>
+    <h1>Prueba de Electricidad básica</h1>
+    <!-- las entradas de los datos tiene que ser en el mismo orden de la BBDD -->
+    <!-- en las siguientes comillas de action, va la ruta del formulario google sheets -->
+    <!-- despues de configurar el google script -->
+    <form id="formulario" action="https://script.google.com/macros/s/AKfycbz-XnlhqoU8KNCFR38D73qLuLanvW8j8Sv63uQEk3Zfe3KNO-ihPN1Fo1RnhCBEMV1gzQ/exec" method="post">
+
+        <h3>1. En instalaciones de interiores de una nave industrial, para circuitos de alumbrado, ¿Cuál es el porcentaje máximo permitido de caída de tensión?</h3>
+        <label><input type="radio" name="preg1" value="opcionA"> a. 10 %</label><br>
+        <label><input type="radio" name="preg1" value="opcionB"> b. 3 %</label><br>
+        <label><input type="radio" name="preg1" value="opcionC"> c. 5 %</label><br>
+
+        <h3>2. Los conductores a instalar se calcularán de forma que cumplan la condición siguiente:</h3>
+        <label><input type="radio" name="preg2" value="opcionA"> a. Deberán soportar las intensidades y caídas de tensión previstas en el tramo que alimenten.</label><br>
+        <label><input type="radio" name="preg2" value="opcionB"> b. Serán de secciones mínimas de 6mm.</label><br>
+        <label><input type="radio" name="preg2" value="opcionC"> c. Serán de secciones mínimas de 2,2mm.</label><br>
+
+        <h3>3. En el interior de las viviendas, el cableado de instalaciones eléctricas, ¿Qué tipo de aislamiento se debe de emplear?</h3>
+        <label><input type="radio" name="preg3" value="opcionA"> a. XLPE</label><br>
+        <label><input type="radio" name="preg3" value="opcionB"> b. EPR</label><br>
+        <label><input type="radio" name="preg3" value="opcionC"> c. PVC</label><br>
+
+        <h3>4. El objetivo principal de las instalaciones de puesta a tierra es:</h3>
+        <label><input type="radio" name="preg4" value="opcionA"> a. Garantizar la seguridad a las personas, derivando la corriente de defecto a tierra.</label><br>
+        <label><input type="radio" name="preg4" value="opcionB"> b. Las instalaciones de tierra no son obligatorias.</label><br>
+        <label><input type="radio" name="preg4" value="opcionC"> c. Garantizar la continuidad del conductor de fase</label><br>
+
+        <h3>5. La sensibilidad de los interruptores diferenciales en las viviendas y locales comerciales es de:</h3>
+        <label><input type="radio" name="preg5" value="opcionA"> a. 30 (mA)</label><br>
+        <label><input type="radio" name="preg5" value="opcionB"> b. 300 (mA)</label><br>
+        <label><input type="radio" name="preg5" value="opcionC"> c. 10 (mA)</label><br>
+
+        <h3>6. Un interruptor magnetotérmico abre instantáneamente el circuito eléctrico cuando:</h3>
+        <label><input type="radio" name="preg6" value="opcionA"> a. Se produce un cortocircuito manual en la red con la palanca de emergencia.</label><br>
+        <label><input type="radio" name="preg6" value="opcionB"> b. Detecta la diferencia de potencial entre las fases.</label><br>
+        <label><input type="radio" name="preg6" value="opcionC"> c. Se produce un cortocircuito en alguna parte de la instalación que protege.</label><br>
+
+        <h3>7. La caída máxima de tensión admitida en una Derivación individual con contadores totalmente centralizados es de:</h3>
+        <label><input type="radio" name="preg7" value="opcionA"> a. 0.01</label><br>
+        <label><input type="radio" name="preg7" value="opcionB"> b. 0.03</label><br>
+        <label><input type="radio" name="preg7" value="opcionC"> c. No tiene límite; puede ser cualquiera.</label><br>
+
+        <h3>8. La caída de tensión máxima admisible en el interior de viviendas unifamiliares será:</h3>
+        <label><input type="radio" name="preg8" value="opcionA"> a. 0.5%</label><br>
+        <label><input type="radio" name="preg8" value="opcionB"> b. 1.5%</label><br>
+        <label><input type="radio" name="preg8" value="opcionC"> c. 0.03</label><br>
+
+        <h3>9. La intensidad de corriente se mide en:</h3>
+        <label><input type="radio" name="preg9" value="opcionA"> a. Amperios</label><br>
+        <label><input type="radio" name="preg9" value="opcionB"> b. Voltios</label><br>
+        <label><input type="radio" name="preg9" value="opcionC"> c. Ohmios</label><br>
+
+        <h3>10. La resistencia eléctrica se mide en:</h3>
+        <label><input type="radio" name="preg10" value="opcionA"> a. Amperios</label><br>
+        <label><input type="radio" name="preg10" value="opcionB"> b. Ohmios</label><br>
+        <label><input type="radio" name="preg10" value="opcionC"> c. Voltios</label><br>
+
+        <h3>Comprobación Final. ¿Has contestado a las preguntas con conocimiento y seguridad en tu respuesta?</h3>
+        <label><input type="radio" name="final" value="opcionA"> Totalmente.</label><br>
+        <label><input type="radio" name="final" value="opcionB"> La mayoría sí.</label><br>
+        <label><input type="radio" name="final" value="opcionC"> La mayoría no.</label><br>
+        <label><input type="radio" name="final" value="opcionD"> En general lo hice a voleo.</label><br>
+
+        <br>
+
+        Nombre:
+        <input type="text" name="nom" id="nom" required><br><br>
+
+        Apellidos:
+        <input type="text" name="apell" id="apell" required><br><br>
+
+        Correo:
+        <input type="email" name="correo" id="correo" required><br><br>
+
+        Contacto:
+        <input type="number" name="tel" id="tel" required><br><br>
+
+        <input type="submit" value="Enviar"><br><br>
+
+        <script src="/js/respFormEletricidad.js"></script>
+    </form>
+</body>
+</html>
